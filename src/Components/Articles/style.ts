@@ -70,6 +70,8 @@ export const ArticleContentLink = styled.a`
   margin-top: 0.5rem;
   cursor: pointer;
 
+  text-decoration-line: none;
+
   &:hover {
     text-decoration-line: underline;
     text-decoration-thickness: 2px;

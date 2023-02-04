@@ -44,6 +44,8 @@ export const SocialLink = styled.a`
   color: #000;
   opacity: 0.87;
 
+  text-decoration-line: none;
+
   &:hover {
     text-decoration-line: underline;
     text-decoration-color: rgba(0,0,0,0.87);
