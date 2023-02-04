@@ -22,5 +22,4 @@ Conforme vou adquirindo novas habilidades, irei atualizando o projeto em novas v
 - Vercel
 ##
 
-<img src="./public/assets/screenshot/screenshot-light-theme.png" alt="App Screenshot light theme" aria-hidden>
-<img src="./public/assets/screenshot/screenshot-dark-theme.png" alt="App Screenshot dark theme" aria-hidden>
+<img src="./public/screenshot.png" alt="Project screenshot" aria-hidden>
