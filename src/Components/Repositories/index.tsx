@@ -10,12 +10,18 @@ import {
   RepositoryContentDescription,
   RepositoryContentLink,
   AllProjectsLink
-} from "./style"
+} from "./style";
 
-export const Repositories = () => {
+interface RepositoriesProps {
+  learnMoreLink?: string;
+  learnMoreText: string;
+  actualPage: string;
+}
+
+export const Repositories = ({ learnMoreLink, learnMoreText, actualPage }: RepositoriesProps) => {
   return (
     <Container>
-      <Title>Featured projects</Title>
+      {actualPage === 'Filipi Rafael' && <Title>Featured projects</Title>}
 
       {
         repositories.map((repository) => (
@@ -38,7 +44,12 @@ export const Repositories = () => {
         ))
       }
 
-      <AllProjectsLink>View all projects →</AllProjectsLink>
+      <AllProjectsLink
+        href={learnMoreLink}
+        target='_blank'
+      >
+        {learnMoreText}
+      </AllProjectsLink>
     </Container>
   )
 }

@@ -15,10 +15,12 @@ import { Contact } from '../../Components/Contact';
 
 import AvatarImage from '../../assets/memoji.svg';
 
+import { Link } from 'react-router-dom';
+
 export const Home = () => {
   return (
     <Container>
-      <Navbar />
+      <Navbar actualPage='Filipi Rafael' />
       
       <Wrapper>
         <Profile>
@@ -28,13 +30,27 @@ export const Home = () => {
           <Description>
             A Full-Stack Engineer that loves apply his knowledge to solve problems, create amazing products and impact lives. As a developer I seek to help my team to become more effective and less experienced developers to grow/learn more.
           </Description>
-          <ProfileLink>
-            Learn more →
-          </ProfileLink>
+          <Link
+            style={{ textDecoration: 'none' }}
+            to='/about'
+          >
+            <ProfileLink>Learn more →</ProfileLink>
+          </Link>
         </Profile>
 
-        <Repositories />
-        <Articles />
+        <Link
+          style={{ textDecoration: 'none' }}
+          to='/projects'
+        >
+          <Repositories actualPage='Filipi Rafael' learnMoreText='View all projects →' />
+        </Link>
+        
+        <Link
+          style={{ textDecoration: 'none' }}
+          to='/articles'
+        >
+          <Articles actualPage='Filipi Rafael' learnMoreText='View all articles →' />
+        </Link>
         <Contact />
       </Wrapper>
     </Container>

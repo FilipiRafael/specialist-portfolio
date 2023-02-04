@@ -1,9 +1,9 @@
 import 'animate.css';
-import { Home } from "./Pages/Home";
+import { AppRoutes } from './Routes/AppRoutes';
 
 function App() {
   return (
-    <Home />
+    <AppRoutes />
   )
 }
 

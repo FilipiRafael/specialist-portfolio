@@ -11,10 +11,16 @@ import {
   AllArticlesLink
 } from "./style";
 
-export const Articles = () => {
+interface ArticlesProps {
+  learnMoreLink?: string;
+  learnMoreText: string;
+  actualPage: string;
+}
+
+export const Articles = ({ learnMoreText, learnMoreLink, actualPage }: ArticlesProps) => {
   return (
     <Container>
-      <Title>Articles</Title>
+      {actualPage === 'Filipi Rafael' && <Title>Articles</Title>}
 
       {
         articles.map((article) => (
@@ -36,7 +42,12 @@ export const Articles = () => {
         ))
       }
 
-      <AllArticlesLink>View all articles →</AllArticlesLink>
+      <AllArticlesLink
+        href={learnMoreLink}
+        target='_blank'
+      >
+        {learnMoreText}
+      </AllArticlesLink>
     </Container>
   )
 }

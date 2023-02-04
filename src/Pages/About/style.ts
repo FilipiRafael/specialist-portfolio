@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-interface IAvatar {
+interface AvatarProps {
   src: any;
 }
 
@@ -22,53 +22,49 @@ export const Wrapper = styled.div`
   animation-duration: 1s;
 
   margin-top: 5rem;
-`;
 
-export const Profile = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-`;
-
-export const Avatar = styled.img<IAvatar>`
-  width: 80px;
-  height: 80px;
-
-  border-radius: 50%;
-  position: relative;
-
-  background-color: #F5F5F5;
 `;
 
 export const Title = styled.h1`
   font-weight: 500;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 26px;
+  line-height: 36px;
   color: #000;
   opacity: 0.87;
 
-  margin-top: 1rem;
+  margin-top: 2rem;
 `;
 
 export const Description = styled.span`
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #000;
-  opacity: 0.6;
-
-  margin-top: 1rem;
-`;
-
-export const ProfileLink = styled.span`
   font-size: 15px;
   line-height: 21px;
   font-weight: 400;
-  color: #000;
-  opacity: 0.87;
 
   margin-top: 1rem;
+
+  text-align: start;
+
+  color: #000;
+  opacity: 0.60;
+`;
+
+export const Avatar = styled.img<AvatarProps>`
+  width: 145px;
+  height: 145px;
+
+  border-radius: 50%;
+`;
+
+export const AboutLink = styled.a`
+  margin-top: 1rem;
+
+  font-size: 15px;
+  line-height: 21px;
+
+  color: #000;
+  opacity: 0.87;
 
   cursor: pointer;
 
@@ -79,8 +75,4 @@ export const ProfileLink = styled.span`
     text-decoration-thickness: 2px;
     text-decoration-color: rgba(0,0,0,0.87);
   }
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `;
