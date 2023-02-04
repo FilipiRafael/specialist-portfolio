@@ -2,23 +2,21 @@
 
 The idea of the project was to apply, practice and improve my technical skills in web development with React, and use it for portfolio and professional presentation.
 
-## 💡 Ideia
+## 💡 Idea
 
-O projeto tem o objetivo final de ser um portfólio minimalista.
+The project has the ultimate goal of being a minimalist portfolio.
 
 ## 🚀 Live Preview
 
-Acesse o projeto: [Live Preview](https://portfolio-github-api.vercel.app/)
+Access the project: [Live Preview](https://filipirafael.com)
 
-## 🚀 Novas versões
+## 🚀 Technologies
 
-Conforme vou adquirindo novas habilidades, irei atualizando o projeto em novas versões. 
-
-## 🚀 Tecnologias utilizadas
-
-- HTML/CSS
-- Javascript
 - React
+- Vite
+- Typescript
+- Styled-components
+- React Router Dom
 - Vercel
 ##
 
