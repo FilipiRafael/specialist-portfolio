@@ -11,6 +11,7 @@ import {
 import { Navbar } from '../../Components/Navbar';
 import { Repositories } from '../../Components/Repositories';
 import { Articles } from '../../Components/Articles';
+import { Contact } from '../../Components/Contact';
 
 import AvatarImage from '../../assets/memoji.svg';
 
@@ -34,6 +35,7 @@ export const Home = () => {
 
         <Repositories />
         <Articles />
+        <Contact />
       </Wrapper>
     </Container>
   )
