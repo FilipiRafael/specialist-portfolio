@@ -1,3 +1,4 @@
+import { articles } from "../../mocks/articles";
 import {
   Container,
   Title,
@@ -8,43 +9,32 @@ import {
   ArticleContentDescription,
   ArticleContentLink,
   AllArticlesLink
-} from "./style"
+} from "./style";
 
 export const Articles = () => {
   return (
     <Container>
       <Title>Articles</Title>
 
-      <Article>
-        <ArticleContent>
-          <ArticleContentDate>2022</ArticleContentDate>
-          <ArticleContentTitle>This is an article title</ArticleContentTitle>
-          <ArticleContentDescription>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-          </ArticleContentDescription>
-          <ArticleContentLink>Try it out →</ArticleContentLink>
-        </ArticleContent>
-      </Article>
-      <Article>
-        <ArticleContent>
-          <ArticleContentDate>2022</ArticleContentDate>
-          <ArticleContentTitle>This is an article title</ArticleContentTitle>
-          <ArticleContentDescription>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-          </ArticleContentDescription>
-          <ArticleContentLink>Try it out →</ArticleContentLink>
-        </ArticleContent>
-      </Article>
-      <Article>
-        <ArticleContent>
-          <ArticleContentDate>2022</ArticleContentDate>
-          <ArticleContentTitle>This is an article title</ArticleContentTitle>
-          <ArticleContentDescription>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-          </ArticleContentDescription>
-          <ArticleContentLink>Try it out →</ArticleContentLink>
-        </ArticleContent>
-      </Article>
+      {
+        articles.map((article) => (
+          <Article key={article.id}>
+            <ArticleContent>
+              <ArticleContentDate>{article.date}</ArticleContentDate>
+              <ArticleContentTitle>{article.title}</ArticleContentTitle>
+              <ArticleContentDescription>
+                {article.description}
+              </ArticleContentDescription>
+              <ArticleContentLink
+                href={article.link}
+                target='_blank'
+              >
+                Try it out →
+              </ArticleContentLink>
+            </ArticleContent>
+          </Article>
+        ))
+      }
 
       <AllArticlesLink>View all articles →</AllArticlesLink>
     </Container>
