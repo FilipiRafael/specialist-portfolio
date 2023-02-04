@@ -2,15 +2,8 @@ export const articles = [
   {
     id: 1,
     date: '2022',
-    title: 'Article title',
-    description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-    link: 'https://www.google.com'
-  },
-  {
-    id: 2,
-    date: '2022',
-    title: 'Article title',
-    description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
-    link: 'https://www.google.com'
+    title: 'What to study to learn Front-end Development',
+    description: 'I am writing this article to help some friends, to start on Front-end Development Career. In this article i wanna route you from scratch to web Framework.',
+    link: 'https://medium.com/@filipirafael.123/what-to-study-to-learn-front-end-development-17d4b1cceb9'
   }
 ]

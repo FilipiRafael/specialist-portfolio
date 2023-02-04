@@ -28,6 +28,7 @@ export const Repositories = () => {
               </RepositoryContentDescription>
               <RepositoryContentLink
                 href={repository.link}
+                target='_blank'
               >
                 Try it out →
               </RepositoryContentLink>
