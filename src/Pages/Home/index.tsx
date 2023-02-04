@@ -26,7 +26,7 @@ export const Home = () => {
         <Profile>
           <Avatar src={AvatarImage} alt='Avatar Profile' />
 
-          <Title>I craft interfaces</Title>
+          <Title>I develop amazing projects</Title>
           <Description>
             A Full-Stack Engineer that loves apply his knowledge to solve problems, create amazing products and impact lives. As a developer I seek to help my team to become more effective and less experienced developers to grow/learn more.
           </Description>
