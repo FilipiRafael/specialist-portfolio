@@ -1,4 +1,4 @@
-## 🚀 Sobre o Projeto
+## 🚀 About the project
 
 The idea of the project was to apply, practice and improve my technical skills in web development with React, and use it for portfolio and professional presentation.
 
