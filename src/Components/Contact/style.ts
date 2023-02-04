@@ -21,6 +21,12 @@ export const Wrapper = styled.div<WrapperProps>`
   display: flex;
   align-items: center;
   justify-content: ${props => props.isSpaceBetween ? 'space-between' : 'flex-start'};
+
+  @media (max-width: 440px) {
+    flex-direction: ${props => props.isSpaceBetween ? 'row' : 'column'};
+    align-items: ${props => props.isSpaceBetween ? 'center' : 'flex-start'};
+    gap: 0.3rem;
+  }
 `;
 
 export const Title = styled.h3`

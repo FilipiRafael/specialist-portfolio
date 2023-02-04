@@ -20,12 +20,32 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
+  @media (max-width: 1112px) {
+    width: 60%;
+  }
+
+  @media (max-width: 780px) {
+    width: 80%;
+  }
+
+  @media (max-width: 640px) {
+    width: 90%;
+  }
+
+  @media (max-width: 560px) {
+    width: 100%;
+  }  
 `;
 
 export const MenuItem = styled.h2<IMenuItem>`
   font-size: 1rem;
   font-weight: 400;
   line-height: 24px;
+
+  @media (max-width: 440px) {
+    font-size: 0.85rem;
+  }
 
   animation: flash;
   animation-duration: 1s;

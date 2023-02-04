@@ -30,6 +30,13 @@ export const Repository = styled.div`
   display: grid;
   grid-template-columns: 70% 30%;
   gap: 1rem;
+
+  overflow: visible;
+
+  @media (max-width: 596px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const RepositoryContent = styled.div`
@@ -100,6 +107,10 @@ export const RepositoryImage = styled.img<IRepositoryImage>`
   
   border-radius: 1rem;
   border: none;
+
+  @media (max-width: 596px) {
+    display: none;
+  }
 `;
 
 export const AllProjectsLink = styled.a`

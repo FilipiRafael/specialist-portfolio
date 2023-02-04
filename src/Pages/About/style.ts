@@ -25,6 +25,18 @@ export const Wrapper = styled.div`
 
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 1112px) {
+    width: 60%;
+  }
+
+  @media (max-width: 780px) {
+    width: 80%;
+  }
+
+  @media (max-width: 640px) {
+    width: 90%;
+  }
 `;
 
 export const Title = styled.h1`

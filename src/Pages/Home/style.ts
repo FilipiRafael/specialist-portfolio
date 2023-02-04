@@ -22,6 +22,18 @@ export const Wrapper = styled.div`
   animation-duration: 1s;
 
   margin-top: 5rem;
+
+  @media (max-width: 1112px) {
+    width: 60%;
+  }
+
+  @media (max-width: 780px) {
+    width: 80%;
+  }
+
+  @media (max-width: 640px) {
+    width: 90%;
+  }
 `;
 
 export const Profile = styled.div`
