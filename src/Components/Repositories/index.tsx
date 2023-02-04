@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { repositories } from "../../mocks/repositories";
 import {
   Container,
@@ -44,12 +45,23 @@ export const Repositories = ({ learnMoreLink, learnMoreText, actualPage }: Repos
         ))
       }
 
-      <AllProjectsLink
-        href={learnMoreLink}
-        target='_blank'
-      >
-        {learnMoreText}
-      </AllProjectsLink>
+      {
+        learnMoreLink ?
+          <AllProjectsLink
+            href={learnMoreLink}
+            target='_blank'
+          >
+            {learnMoreText}
+          </AllProjectsLink> :
+          <Link
+            style={{ textDecoration: 'none', marginTop: '3rem' }}
+            to='/projects'
+          >
+            <AllProjectsLink target='_blank'>
+              {learnMoreText}
+            </AllProjectsLink>
+          </Link>
+      }
     </Container>
   )
 }

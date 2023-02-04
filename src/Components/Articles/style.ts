@@ -93,6 +93,8 @@ export const AllArticlesLink = styled.a`
 
   cursor: pointer;
 
+  text-decoration-line: none;
+
   &:hover {
     text-decoration-line: underline;
     text-decoration-thickness: 2px;

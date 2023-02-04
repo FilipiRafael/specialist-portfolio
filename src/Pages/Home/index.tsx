@@ -38,19 +38,9 @@ export const Home = () => {
           </Link>
         </Profile>
 
-        <Link
-          style={{ textDecoration: 'none' }}
-          to='/projects'
-        >
-          <Repositories actualPage='Filipi Rafael' learnMoreText='View all projects →' />
-        </Link>
+        <Repositories actualPage='Filipi Rafael' learnMoreText='View all projects →' />
         
-        <Link
-          style={{ textDecoration: 'none' }}
-          to='/articles'
-        >
-          <Articles actualPage='Filipi Rafael' learnMoreText='View all articles →' />
-        </Link>
+        <Articles actualPage='Filipi Rafael' learnMoreText='View all articles →' />
         <Contact />
       </Wrapper>
     </Container>
