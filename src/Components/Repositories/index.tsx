@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { repositories } from "../../mocks/repositories";
+import { repositories, allRepositories } from "../../mocks/repositories";
 import {
   Container,
   Title,
@@ -25,24 +25,45 @@ export const Repositories = ({ learnMoreLink, learnMoreText, actualPage }: Repos
       {actualPage === 'Filipi Rafael' && <Title>Featured projects</Title>}
 
       {
-        repositories.map((repository) => (
-          <Repository key={repository.id}>
-            <RepositoryContent>
-              <RepositoryContentDate>{repository.date}</RepositoryContentDate>
-              <RepositoryContentTitle>{repository.title}</RepositoryContentTitle>
-              <RepositoryContentDescription>
-                {repository.description}
-              </RepositoryContentDescription>
-              <RepositoryContentLink
-                href={repository.link}
-                target='_blank'
-              >
-                Try it out →
-              </RepositoryContentLink>
-            </RepositoryContent>
-            <RepositoryImage src={repository.image} alt='Project Placeholder' />
-          </Repository>
-        ))
+        actualPage === 'Filipi Rafael' ? (
+          repositories.map((repository) => (
+            <Repository key={repository.id}>
+              <RepositoryContent>
+                <RepositoryContentDate>{repository.date}</RepositoryContentDate>
+                <RepositoryContentTitle>{repository.title}</RepositoryContentTitle>
+                <RepositoryContentDescription>
+                  {repository.description}
+                </RepositoryContentDescription>
+                <RepositoryContentLink
+                  href={repository.link}
+                  target='_blank'
+                >
+                  Try it out →
+                </RepositoryContentLink>
+              </RepositoryContent>
+              <RepositoryImage src={repository.image} alt='Project Placeholder' />
+            </Repository>
+          ))
+        ) : (
+          allRepositories.map((repository) => (
+            <Repository key={repository.id}>
+              <RepositoryContent>
+                <RepositoryContentDate>{repository.date}</RepositoryContentDate>
+                <RepositoryContentTitle>{repository.title}</RepositoryContentTitle>
+                <RepositoryContentDescription>
+                  {repository.description}
+                </RepositoryContentDescription>
+                <RepositoryContentLink
+                  href={repository.link}
+                  target='_blank'
+                >
+                  Try it out →
+                </RepositoryContentLink>
+              </RepositoryContent>
+              <RepositoryImage src={repository.image} alt='Project Placeholder' />
+            </Repository>
+          ))
+        )
       }
 
       {
