@@ -7,7 +7,7 @@ export const repositories = [
   {
     id: 1,
     date: '2023',
-    title: 'Todo App',
+    title: 'Todo Rocket',
     description: 'The idea of the project was to apply, practice and improve my technical skills in mobile development.',
     link: 'https://github.com/FilipiRafael/todoapp',
     image: TodoApp,
@@ -34,7 +34,7 @@ export const allRepositories = [
   {
     id: 1,
     date: '2023',
-    title: 'Todo App',
+    title: 'Todo Rocket',
     description: 'The idea of the project was to apply, practice and improve my technical skills in mobile development.',
     link: 'https://github.com/FilipiRafael/todoapp',
     image: TodoApp,
