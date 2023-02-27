@@ -12,3 +12,5 @@
 //   // supabaseUrl,
 //   // supabaseKey,
 // );
+
+export const supabase = {};
