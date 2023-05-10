@@ -18,7 +18,7 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
   width: 35%;
 
-  animation: flash;
+  animation: jello;
   animation-duration: 1s;
 
   margin-top: 5rem;

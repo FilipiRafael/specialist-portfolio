@@ -47,7 +47,7 @@ export const MenuItem = styled.h2<IMenuItem>`
     font-size: 0.85rem;
   }
 
-  animation: flash;
+  animation: jello;
   animation-duration: 1s;
 
   cursor: pointer;
