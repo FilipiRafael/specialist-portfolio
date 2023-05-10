@@ -42,7 +42,7 @@ export const About = () => {
         </Description>
 
         <AboutLink
-          href='https://drive.google.com/file/d/14pEP6e8h9JuB9DunLBrL8IqVFM8bNKtr/view?usp=sharing'
+          href='https://drive.google.com/file/d/1CIHrH_EKTDm5bTKUHPTVUdabL0kv0Mu2/view?usp=sharing'
           target='_blank'
         >
           View CV ↗︎
