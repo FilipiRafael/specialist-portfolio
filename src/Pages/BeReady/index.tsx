@@ -13,7 +13,7 @@ export const BeReady = () => {
     <Container>
       <Title>All right! 🥳</Title>
       <Description>
-        Now go back to the app to start turning goals into actions.
+        Now <strong>go back to the app</strong> to start turning goals into actions.
       </Description>
 
       <Logo src={BeReadyLogo} alt='BeReady Logo' />
