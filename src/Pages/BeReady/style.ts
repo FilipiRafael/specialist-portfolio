@@ -42,7 +42,7 @@ export const Description = styled.h2`
   margin: 1rem 0;
 `;
 
-export const Button = styled.a`
+export const Button = styled.button`
   padding: 1rem 2rem;
   border-radius: 0.5rem;
   cursor: pointer;

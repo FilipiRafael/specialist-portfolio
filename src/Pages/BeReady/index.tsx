@@ -18,7 +18,7 @@ export const BeReady = () => {
 
       <Logo src={BeReadyLogo} alt='BeReady Logo' />
 
-      <Button href='https://auth.expo.io/@filipi.rafael/beready'>
+      <Button>
         Take Action on My Goals
       </Button>
     </Container>
