@@ -42,7 +42,7 @@ export const Description = styled.h2`
   margin: 1rem 0;
 `;
 
-export const Button = styled.button`
+export const Button = styled.a`
   padding: 1rem 2rem;
   border-radius: 0.5rem;
   cursor: pointer;
@@ -50,6 +50,7 @@ export const Button = styled.button`
   color: #FFF;
   font-weight: bold;
   font-size: 1rem;
+  text-decoration: none;
   background-color: #6249C5;
 
   margin-top: 1rem;
