@@ -21,6 +21,12 @@ export const Contact = () => {
           Linkedin ↗︎
         </SocialLink>
         <SocialLink
+          href='https://medium.com/@filipirafael.123'
+          target='_blank'
+        >
+          Medium ↗︎
+        </SocialLink>
+        <SocialLink
           href='https://github.com/FilipiRafael'
           target='_blank'
         >
