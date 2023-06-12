@@ -40,7 +40,7 @@ export const Home = () => {
 
         <Repositories actualPage='Filipi Rafael' learnMoreText='View all projects →' />
         
-        <Articles actualPage='Filipi Rafael' learnMoreText='View all articles →' />
+        <Articles learnMoreLink='/articles' actualPage='Filipi Rafael' learnMoreText='View all articles →' />
         <Contact />
       </Wrapper>
     </Container>

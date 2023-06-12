@@ -47,7 +47,6 @@ export const Articles = ({ learnMoreText, learnMoreLink, actualPage }: ArticlesP
         learnMoreLink ?
           <AllArticlesLink
             href={learnMoreLink}
-            target='_blank'
           >
             {learnMoreText}
           </AllArticlesLink> :
